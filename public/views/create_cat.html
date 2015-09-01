@@ -1,0 +1,19 @@
+<!--We are using this view for creating and editing a cat-->
+<form class="well container" ng-submit="vm.submitCat()">
+	<div class="well">
+		<label >Name<span ng-if="vm.catCopy.name">: {{vm.catCopy.name}}</span></label>
+		<input class="form-control" ng-model="vm.cat.name" placeholder="Name...">
+	</div>
+	<div class="well">
+		<label >Image<span ng-if="vm.catCopy.image">: {{vm.catCopy.image}}</span></label>
+		<input class="form-control" ng-model="vm.cat.image" placeholder="Image...">
+	</div>
+	<div class="well">
+		<label >Color<span ng-if="vm.catCopy.color">: {{vm.catCopy.color}}</span></label>
+		<input class="form-control" ng-model="vm.cat.color" placeholder="Color...">
+	</div>
+	<div style="text-align: center">
+		<button type="submit" class="btn btn-lg btn-success">Submit</button>
+	</div>
+</form>
+<h3>Create and Edit Cat</h3>

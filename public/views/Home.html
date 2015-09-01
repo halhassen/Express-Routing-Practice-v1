@@ -1,0 +1,26 @@
+<div ng-controller="HomeController as vm">
+	<div ng-repeat="c in vm.cats" class="col-sm-3 cat-holder">
+		<div class="well">
+			<img ng-src="{{c.image}}" class="cat-picture"/>
+			<div>
+				<i>{{c.name}}</i> <br>
+				<i>color: {{c.color}}</i>
+				<a ng-click="vm.deleteCat(c)" style="float: right; color: red;">Delete</a>
+			</div>
+		</div>
+	</div>	
+</div>
+	<!--<div class="row">
+		<div class="col-sm-6">
+			<input type="text" placeholder="Track" ng-model="vm.track"/><br>
+			<input type="text" placeholder="Artist" ng-model="vm.artist"/><br>
+			<input type="text" placeholder="Album" ng-model="vm.album"/><br>
+			<button type="button" class="btn btn-info btn-large" ng-click="vm.createMusic(vm.track, vm.artist, vm.album)">Create Music</button><br>
+		</div>
+		<div class="col-sm-6">
+			<input type="text" placeholder="Team" ng-model="vm.teamName"/><br>
+			<input type="text" placeholder="City" ng-model="vm.city"/><br>
+			<input type="text" placeholder="Player" ng-model="vm.player"/><br>
+			<button type="button" class="btn btn-warning btn-large" ng-click="vm.createTeam(vm.teamName, vm.city, vm.player)">Create Team</button><br>
+		</div>
+	</div> -->
